@@ -53,9 +53,9 @@
   
   <img class="hide" id="nani" src="https://i.pinimg.com/originals/b2/b0/84/b2b084ad6061dfe2122302266ea8af58.jpg" alt="background">
   
-  <img class="hide" id="start" src="https://cplfoundation.org/wp-content/uploads/2019/07/Play-button-450x450.png" alt="start sprite">
+  <img class="hide" id="start" src="https://www.prfire.com/wp-content/uploads/2015/07/cube1.png" alt="start sprite">
   
-  <img id="re" class="hide" src="https://img.icons8.com/carbon-copy/2x/repeat.png" alt="restart sprite">
+  <img id="re" class="hide" src="https://www.aclib.us/sites/default/files/styles/panopoly_image_original/public/makerspacelogo2019-horizontal-01.png?itok=o1hd8KJT">
   
   <img id="hi" class="hide" src="https://t3.rbxcdn.com/6dfd7c68e21644c7b3224be3bd0e1a33" alt="pikachu jumping sprite">
   
@@ -140,13 +140,14 @@
      cxt.fillStyle = "black";
      cxt.font = "16px calibri";
      cxt.fillText(" Welcome to Mrs.blackwell-Jump", cvs.height / 2 - 211, 18);
-     cxt.fillText("Press play to start ", cvs.height / 2 - 160, 35);
+     cxt.fillText("Press the rubix cube to start ", cvs.height / 2 - 190, 35);
    }
    if (state.current == state.over) {
      cxt.fillStyle = "black";
      cxt.font = "16px calibri";
      cxt.fillText("Game Over", cvs.height / 2 - 140, 18);
      cxt.fillText("Press the replay button ", cvs.height / 2 - 180, 35);
+      cxt.fillText("Or Refresh The Tab", cvs.height / 2 - 165, 66);
      
    }
  }
@@ -228,7 +229,7 @@
  var pipes = new pipes();
 
  const yes = new Image();
- yes.src = "https://www.mariowiki.com/images/thumb/f/f4/MK7-Spiny-Shell.png/160px-MK7-Spiny-Shell.png";
+ yes.src = "https://cdn140.picsart.com/276896522001211.png?type=webp&to=min&r=640";
  yes.height = 154;
 
  function shell() {
@@ -253,7 +254,7 @@
  function drawStart() {
    if (state.current == state.getReady) {
      const start = document.getElementById('start');
-     cxt.drawImage(start, cvs.height / 2 - 150, cvs.width / 2, 100, 100);
+     cxt.drawImage(start, cvs.height / 2 - 180, cvs.width / 2, 100, 100);
 
    }
  }
@@ -267,7 +268,7 @@
  function drawRe() {
    if (state.current == state.over) {
      const re = document.getElementById("re");
-     cxt.drawImage(re, cvs.height / 2 - 210, cvs.width / 2);
+     cxt.drawImage(re, cvs.height / 2 - 350, cvs.width / 2, 450,300);
    }
 
  }
